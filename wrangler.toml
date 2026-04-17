@@ -1,0 +1,29 @@
+```toml
+name = "firebase-integration-hub"
+main = "index.js"
+compatibility_date = "2024-01-01"
+workers_dev = true
+
+[build]
+command = ""
+
+[build.upload]
+format = "modules"
+main = "./index.js"
+
+[[migrations]]
+tag = "v1"
+new_classes = []
+
+[env.production]
+name = "firebase-integration-hub-production"
+workers_dev = false
+routes = [
+  { pattern = "firebase-hub.example.com/*", zone_name = "example.com" }
+]
+
+[env.staging]
+name = "firebase-integration-hub-staging"
+workers_dev = true
+
+```

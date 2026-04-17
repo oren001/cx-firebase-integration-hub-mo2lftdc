@@ -1,0 +1,36 @@
+```json
+{
+  "name": "firebase-integration-hub",
+  "version": "1.0.0",
+  "description": "Centralized Firebase service layer that all future projects can import and use. Provides ready-to-use Auth, Firestore CRUD, Storage, and Analytics wrapped in simple, reusable functions.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "start": "wrangler dev",
+    "publish": "wrangler deploy"
+  },
+  "keywords": [
+    "firebase",
+    "cloudflare-workers",
+    "auth",
+    "firestore",
+    "storage",
+    "analytics",
+    "service-layer",
+    "reusable"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^10.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+```
